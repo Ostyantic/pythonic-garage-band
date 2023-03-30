@@ -4,9 +4,15 @@ class Band:
         self.name = name
         self.members = members
 
-    @staticmethod
-    def play_solos(solo):
-        print(solo)
+    def __str__(self):
+        return f'This Bands name is {self.name}'
+
+    def __repr__(self):
+        return f'Band instance. Name = {self.name}'
+
+    def play_solos(self):
+        play_solo = [member.play_solo() for member in self.members]
+        return play_solo
 
 
 class Musician:
@@ -58,7 +64,7 @@ class Drummer(Musician):
         return 'drums'
 
     def play_solo(self):
-        return 'bom bom buh bom'
+        return 'rattle boom crash'
 
 
 if __name__ == "__main__":
