@@ -1,6 +1,6 @@
 import pytest
 
-from pythonic_garage_band.band import (
+from garage_band.band import (
     Band,
     Musician,
     Guitarist,
