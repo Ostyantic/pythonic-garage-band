@@ -22,14 +22,14 @@ class Guitarist(Musician):
         return f'My name is {self.name} and I play {self.get_instrument()}'
 
     def __repr__(self):
-        return f'Guitarist("{self.name}")'
+        return f'Guitarist instance. Name = {self.name}'
 
     @staticmethod
-    def get_instrument(self):
+    def get_instrument():
         return 'guitar'
 
     @staticmethod
-    def play_solo(self):
+    def play_solo():
         return 'face melting guitar solo'
 
 
@@ -39,14 +39,14 @@ class Bassist(Musician):
         return f'My name is {self.name} and I play {self.get_instrument()}'
 
     def __repr__(self):
-        return f'Bassist("{self.name}")'
+        return f'Bassist instance. Name = {self.name}'
 
     @staticmethod
-    def get_instrument(self):
+    def get_instrument():
         return 'bass'
 
     @staticmethod
-    def play_solo(self):
+    def play_solo():
         return 'bom bom buh bom'
 
 
@@ -56,24 +56,25 @@ class Drummer(Musician):
         return f'My name is {self.name} and I play {self.get_instrument()}'
 
     def __repr__(self):
-        return f'Bassist("{self.name}")'
+        return f'Drummer instance. Name = {self.name}'
 
     @staticmethod
-    def get_instrument(self):
-        return 'bass'
+    def get_instrument():
+        return 'drums'
 
     @staticmethod
-    def play_solo(self):
+    def play_solo():
         return 'bom bom buh bom'
 
 
 if __name__ == "__main__":
-    # Guitarists
-    joan = pass
-    jimi = pass
-    # Drummers
-    sheila = pass
-    ginger = pass
-    # Bassists
-    meshell = pass
-    flea = pass
+    pass
+    # # Guitarists
+    # joan = Guitarist("Joan Jett")
+    # jimi = Guitarist("Jimi Hendrix")
+    # # Drummers
+    # sheila = Drummer("Sheila E.")
+    # ginger = Drummer("Ginger Baker")
+    # # Bassists
+    # meshell = Bassist("Meshell Ndegeocello")
+    # flea = Bassist("Flea")
