@@ -1,12 +1,11 @@
 class Band:
-    members = []
 
-    def __init__(self, name='unknown'):
+    def __init__(self, name, members):
         self.name = name
-        Band.members.append(self)
+        self.members = members
 
     @staticmethod
-    def play_solo(solo):
+    def play_solos(solo):
         print(solo)
 
 
@@ -24,16 +23,15 @@ class Guitarist(Musician):
     def __repr__(self):
         return f'Guitarist instance. Name = {self.name}'
 
-    @staticmethod
-    def get_instrument():
+    def get_instrument(self):
         return 'guitar'
 
-    @staticmethod
-    def play_solo():
+    def play_solo(self):
         return 'face melting guitar solo'
 
 
 class Bassist(Musician):
+
 
     def __str__(self):
         return f'My name is {self.name} and I play {self.get_instrument()}'
@@ -41,12 +39,10 @@ class Bassist(Musician):
     def __repr__(self):
         return f'Bassist instance. Name = {self.name}'
 
-    @staticmethod
-    def get_instrument():
+    def get_instrument(self):
         return 'bass'
 
-    @staticmethod
-    def play_solo():
+    def play_solo(self):
         return 'bom bom buh bom'
 
 
@@ -58,12 +54,10 @@ class Drummer(Musician):
     def __repr__(self):
         return f'Drummer instance. Name = {self.name}'
 
-    @staticmethod
-    def get_instrument():
+    def get_instrument(self):
         return 'drums'
 
-    @staticmethod
-    def play_solo():
+    def play_solo(self):
         return 'bom bom buh bom'
 
 
